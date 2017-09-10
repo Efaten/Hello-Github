@@ -35,7 +35,7 @@ main(int arg0, char *argg [ ] )
  float c;
  char m;
  c = *argg [1];
-if (arg0<=1) {
+ if (arg0<=1) {
   printf("%s","Для запуска требуются параметры");
 
  } else {
@@ -55,7 +55,7 @@ if (arg0<=1) {
         m = *argg [2];
         if (m == 'C'){
              printf ("%.2f F\n", converterCtoF(c));
-            printf ("%.2f K\r", converterCtoK(c));
+             printf ("%.2f K\r", converterCtoK(c));
         }
         if (m == 'K'){
              printf ("%.2f C\n", converterKtoC(c));
@@ -63,7 +63,7 @@ if (arg0<=1) {
          }
         if (m == 'F'){
              printf ("%.2f C\n", converterFtoC(c));
-            printf ("%.2f K\r", converterFtoK(c));
+             printf ("%.2f K\r", converterFtoK(c));
          }
     }
  }
