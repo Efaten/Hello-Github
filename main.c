@@ -1,4 +1,4 @@
-#include <QCoreApplication>
+//#include <QCoreApplication>
 #include <stdio.h>
 float converterCtoF(float a){
     float f;
