@@ -1,5 +1,6 @@
 //#include <QCoreApplication>
 #include <stdio.h>
+#include <stdlib.h>
 float converterCtoF(float a){
     float f;
     f = 1.8*a+32;
@@ -34,7 +35,7 @@ main(int arg0, char *argg [ ] )
 {
  float c;
  char m;
- c = *argg [1];
+ c = atof(argg [1]);
  if (arg0<=1) {
   printf("%s","Для запуска требуются параметры");
 
@@ -68,4 +69,3 @@ main(int arg0, char *argg [ ] )
     }
  }
 }
-
