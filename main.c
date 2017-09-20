@@ -37,7 +37,7 @@ main(int arg0, char *argg [ ] )
  char m;
  c = atof(argg [1]);
  if (arg0<=1) {
-  printf("%s","Для запуска требуются параметры");
+ // printf("%s","Для запуска требуются параметры");
 
  } else {
     if (arg0 == 2) {
