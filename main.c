@@ -31,15 +31,15 @@ float converterKtoF(float y){
     i = 9*(y - 273.15)/5 + 32;
     return i;
 }
-main(int arg0, char *argg [ ] )
+int main(int arg0, char *argg [ ] )
 {
  float c;
  char m;
  c = atof(argg [1]);
  if (arg0<=1) {
  /* printf("%s","Для запуска требуются параметры");*/
-
- } else {
+ }
+  else {
     if (arg0 == 2) {
         printf ("%s C\n", argg [1]);
         printf ("%.2f F\n", converterCtoF(c));
@@ -52,7 +52,8 @@ main(int arg0, char *argg [ ] )
         printf ("%s K\n", argg [1]);
         printf ("%.2f C\n", converterKtoC(c));
         printf ("%.2f F\r", converterKtoF(c));
-    } else {
+     }
+     else {
         m = *argg [2];
         if (m == 'C'){
              printf ("%.2f F\n", converterCtoF(c));
@@ -68,4 +69,5 @@ main(int arg0, char *argg [ ] )
          }
     }
  }
+ return 0;
 }
