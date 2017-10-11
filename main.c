@@ -145,24 +145,4 @@ int main()
     }
     printf ("\n That's all.\n");
     return -1;
-    /*for (i = 0; i < n - 1; i++){
-        for (j = 0; j < p; j++){
-            l = l + masmen [i][j]*ruchmas [j][i];
-        }
-    }*/
-    /*while ( ( a = getch() ) != '.' ){
-        while ( ( a = getch() ) != ','){
-            while ( ( a = getch() ) != ' '){
-                k = k*10 + a - '0';
-            }
-        }
-    }*/
-    /*for (i = 0; i < m-1; i++){
-        while ( (a = getch() ) != EOF || (a != '\n') || a != 32 ){
-            if (a != 32 && a >= 48 && a <= 57){
-                k = k*10 + a - '0';
-                l = a;
-            }
-        }
-    printf ("")*/
 }
