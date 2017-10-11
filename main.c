@@ -30,11 +30,11 @@ int main()
         massiv [0][i] = massiv [n-1][i];
         massiv [n-1][i] = v;
     }
-    for (i = 0; i < n; i++){
+    /*for (i = 0; i < n; i++){
         for (j = 0; j < m; j++)
             printf("%3.0i ", massiv [i][j]);
         printf ("\n");
-    }
+    }*/
     for (i = 0; i < m/2; i++){
         int v1 = massiv [0][i];
         massiv [0][i] = massiv [0][m - i - 1];
@@ -59,12 +59,12 @@ int main()
         }
     }
     printf ("\n \n \n");
-    printf ("%3.0i \n", min);
-    for (i = 0; i < n; i++){
+    /*printf ("%3.0i \n", min);*/
+    /*for (i = 0; i < n; i++){
         for (j = 0; j < m; j++)
             printf("%3.0i ", massiv [i][j]);
         printf ("\n");
-    }
+    }*/
     int masmen [n-1][m-1];
     for (i = 0; i < n-1; i++){
         for (j = 0; j < m-1; j++){
@@ -92,7 +92,7 @@ int main()
         return 1;
     }
     printf ("%i \n", p);
-    printf ("Thank you. It doesn't change anything.\nNow please enter the data in correct format\n");
+    printf ("Thank you.",/*It doesn't change anything.*/"\nNow please enter the data in correct format\n");
     printf ("Enter '1' if you want to know the format.\nEnter '2' if you want to start entering the matrix.\n");
     int a;
     int k = 0;
