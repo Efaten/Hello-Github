@@ -143,6 +143,6 @@ int main()
         }
         printf ("\n");
     }
-    printf ("\n That's all.\n");
+    printf ("\nThat's all.\n");
     return -1;
 }
