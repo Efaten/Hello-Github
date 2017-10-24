@@ -12,18 +12,24 @@ int main(int arg0, char *argg [ ] )
  char m;
  c = atof(argg [1]);
     if (arg0<=1) {
-    /* printf("%s","Äëÿ çàïóñêà òðåáóþòñÿ ïàðàìåòðû");*/
+    /* printf("%s","Ã„Ã«Ã¿ Ã§Ã Ã¯Ã³Ã±ÃªÃ  Ã²Ã°Ã¥Ã¡Ã³Ã¾Ã²Ã±Ã¿ Ã¯Ã Ã°Ã Ã¬Ã¥Ã²Ã°Ã»");*/
     }
     else {
         if (arg0 == 2) {
-            printf ("%s C\n", argg [1]);
-            printf ("%.2f F\n", converterCtoF(c));
-            printf ("%.2f K\n", converterCtoK(c));
-            printf ("\n");
-            printf ("%s F\n", argg [1]);
-            printf ("%.2f C\n", converterFtoC(c));
-            printf ("%.2f K\n", converterFtoK(c));
-            printf ("\n");
+            if (c > -273.15)
+            {
+                printf ("%s C\n", argg [1]);
+                printf ("%.2f F\n", converterCtoF(c));
+                printf ("%.2f K\n", converterCtoK(c));
+                printf ("\n");
+            }
+            if (c > -469.27)
+            {
+                printf ("%s F\n", argg [1]);
+                printf ("%.2f C\n", converterFtoC(c));
+                printf ("%.2f K\n", converterFtoK(c));
+                printf ("\n");
+            }
             if (atof(argg[1])>=0)
             {
                 printf ("%s K\n", argg [1]);
@@ -33,15 +39,15 @@ int main(int arg0, char *argg [ ] )
         }
         else {
             m = *argg [2];
-            if (m == 'C'){
+            if (m == 'C' && c > -273.15){
                 printf ("%.2f F\n", converterCtoF(c));
                 printf ("%.2f K\r", converterCtoK(c));
             }
-            if (m == 'K' && atof(argg[1])){
+            if (m == 'K' && atof(argg[1])>0){
                 printf ("%.2f C\n", converterKtoC(c));
                 printf ("%.2f F\r", converterKtoF(c));
             }
-            if (m == 'F'){
+            if (m == 'F'&& c > 469.27){
                 printf ("%.2f C\n", converterFtoC(c));
                 printf ("%.2f K\r", converterFtoK(c));
             }
