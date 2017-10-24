@@ -22,6 +22,8 @@ int main(int arg0, char *argg [ ] )
                 printf ("%.2f F\n", converterCtoF(c));
                 printf ("%.2f K\n", converterCtoK(c));
                 printf ("\n");
+            } else {
+                printf ("\nTemperature C doesn't exist\n");
             }
             if (c > -469.27)
             {
@@ -29,12 +31,16 @@ int main(int arg0, char *argg [ ] )
                 printf ("%.2f C\n", converterFtoC(c));
                 printf ("%.2f K\n", converterFtoK(c));
                 printf ("\n");
+            } else {
+                printf ("Temperature doesn't exist\n");
             }
             if (atof(argg[1])>=0)
             {
                 printf ("%s K\n", argg [1]);
                 printf ("%.2f C\n", converterKtoC(c));
                 printf ("%.2f F\r", converterKtoF(c));
+            } else {
+                printf ("Temperature K doesn't exist\n");
             }
         }
         else {
@@ -47,7 +53,7 @@ int main(int arg0, char *argg [ ] )
                 printf ("%.2f C\n", converterKtoC(c));
                 printf ("%.2f F\r", converterKtoF(c));
             }
-            if (m == 'F'&& c > 469.27){
+            if (m == 'F'&& c > -469.27){
                 printf ("%.2f C\n", converterFtoC(c));
                 printf ("%.2f K\r", converterFtoK(c));
             }
