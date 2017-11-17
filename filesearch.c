@@ -59,6 +59,5 @@ int main(int argc, const char *argv[])
     }
     if (!slovo)
         printf ("\nCan not find the line");
-    /*printf ("\n%d\n%d",i, k);*/
     return 3;
 }
