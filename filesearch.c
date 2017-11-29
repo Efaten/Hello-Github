@@ -10,7 +10,7 @@ int main(int argc, const char *argv[])
     }
     FILE *fl;
     int i = 0;
-    bool slovo;
+    int slovo;
     char c;
     int num = 0;
     int k = 1;
@@ -59,5 +59,8 @@ int main(int argc, const char *argv[])
     }
     if (!slovo)
         printf ("\nCan not find the line");
+    /*printf ("\n%d\n%d",i, k);*/
+    /*printf("\n%d", ftell(fl));*/
+    fclose(fl);
     return 3;
 }
