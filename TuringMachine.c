@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+/**/
 /*void begin();*/
 void secondtrybegin(FILE *fl, int* arr, int i, char *cmd, long int m1, long int m2);
 
