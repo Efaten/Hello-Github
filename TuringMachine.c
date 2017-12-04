@@ -123,7 +123,7 @@ void secondtrybegin(FILE *fl, int* arr, int i, char *cmd, long int m1, long int 
         }
         else if (!strcmp(cmd, "get"))
         {
-            scanf ("%d\n", arr[i]);
+            scanf ("%d\n", &arr[i]);
         }
         else if (!strcmp(cmd, "printc"))
         {
