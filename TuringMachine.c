@@ -63,7 +63,7 @@ int main(int argc, const char *argv[])
         }
         else if (!strcmp(cmd, "get"))
         {
-            scanf ("%d", &arr[i]);
+            arr[i] = getchar();
         }
         else if (!strcmp(cmd, "printc"))
         {
