@@ -18,6 +18,7 @@ int main()
         int ac = 0;
         int c = 0;
         char program[255];
+        signal(SIGINT,SIG_IGN);
         printf ("> ");
         while ((c != '\n' && c != EOF) && (scanf("%s", cmd)))
         {
